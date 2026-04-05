@@ -32,7 +32,19 @@ go build
 ```
 
 ## Testing
-Run all tests in current directory:
+Run tests in current directory:
+```bash
+go test
+```
+
+Run tests with verbose output:
+```bash
+go test -v
+```
+
+Run all tests in project:
 ```bash
 go test ./...
 ```
+
+
