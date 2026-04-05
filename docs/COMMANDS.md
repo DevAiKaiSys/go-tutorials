@@ -26,7 +26,7 @@ Run the current package:
 go run .
 ```
 
-Build the binary:
+[go build command](https://go.dev/cmd/go/#hdr-Compile_packages_and_dependencies)
 ```bash
 go build
 ```
@@ -46,5 +46,32 @@ Run all tests in project:
 ```bash
 go test ./...
 ```
+## Environment & Installation
 
+[go list command](https://go.dev/cmd/go/#hdr-List_packages_or_modules)
+```bash
+go list -f '{{.Target}}'
+```
 
+### Update PATH
+On Linux or Mac:
+```bash
+export PATH=$PATH:/path/to/your/install/directory
+```
+
+On Windows:
+```cmd
+set PATH=%PATH%;C:\path\to\your\install\directory
+```
+
+### Set GOBIN
+```bash
+go env -w GOBIN=/path/to/your/bin
+# or
+go env -w GOBIN=C:\path\to\your\bin
+```
+
+[go install command](https://go.dev/ref/mod#go-install)
+```bash
+go install
+```
