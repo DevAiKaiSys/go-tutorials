@@ -51,6 +51,16 @@ Run all tests in project:
 ```bash
 go test ./...
 ```
+
+Fuzz testing:
+```bash
+go test -fuzz=Fuzz
+```
+
+Fuzz testing with duration:
+```bash
+go test -fuzz=Fuzz -fuzztime 30s
+```
 ## Environment & Installation
 
 [go list command](https://go.dev/cmd/go/#hdr-List_packages_or_modules)
