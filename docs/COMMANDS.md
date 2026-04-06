@@ -11,6 +11,11 @@ Add missing and remove unused modules:
 go mod tidy
 ```
 
+Download and update dependencies:
+```bash
+go get .
+```
+
 ## Local Development
 
 [go mod edit command](https://go.dev/ref/mod#go-mod-edit)
